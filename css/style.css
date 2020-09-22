@@ -79,15 +79,6 @@ h2 {
 	z-index: -3;
 }
 
-/*.head__content_button {
-	display: block;
-	width: 40px;
-	height: 30px;
-	border-radius: 5px;
-	position: relative;
-	background: #fffe00 url('mail.png') center;
-	background-size: cover;
-}*/
 
 .contact-buttons {
 	display: flex;
@@ -104,7 +95,6 @@ h2 {
 	position: relative;
 	border-radius: 50%;	
 	cursor: pointer;
-
 }
 
 .about p {
@@ -359,10 +349,10 @@ hr {
 		flex-direction: column;
 		width: 100%;
 	}
-	.head__content > *, .head__menu ul {
+	.head__content > *, .head__menu ul, .footer__contact-buttons {
 		width: 100%;
 	}
-	.head__contact-buttons {
+	.head__contact-buttons, .footer__contact-buttons {
 		justify-content: space-around;
 	}
 	.head__menu li:nth-child(1) {
