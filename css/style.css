@@ -1,0 +1,397 @@
+*, html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #000;
+	font-family: 'Raleway', sans-serif;
+	scroll-behavior: smooth;
+}
+
+*::selection {
+	background-color: #ffca05;
+	color: white;
+}
+
+.wrapper {
+	width: 65%;
+	margin: 0 auto;	
+	line-height: 1.8rem;
+}
+
+.accent-bg {
+	background: #fffe00;
+}
+
+.accent-font {
+	color: #fffe00;
+}
+
+.head > *, .about, .skills {
+	padding: 40px 0;
+}
+
+h1 {
+	padding-bottom: 15px;
+}
+
+h2 {
+	text-align: center;
+	padding: 10px 0 40px;
+}
+
+.head__menu ul {
+	display: flex;
+	justify-content: space-between;
+	width: 55%;
+	float: right;
+	list-style: none;
+}
+
+.head__menu li {
+	position: relative;
+}
+
+.head__content {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.head__image {
+	width: 40%;
+}
+
+.head__image img {
+	width: 100%;
+}
+
+.head__text {
+	width: 45%;
+}
+
+.head-decor {
+	width: 40%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: -3;
+}
+
+/*.head__content_button {
+	display: block;
+	width: 40px;
+	height: 30px;
+	border-radius: 5px;
+	position: relative;
+	background: #fffe00 url('mail.png') center;
+	background-size: cover;
+}*/
+
+.contact-buttons {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.contact-button {
+	width: 38px;
+	height: 38px;
+	background-color: #ddd;
+	background-image: url('./icons/sprite.png');
+	position: relative;
+	border-radius: 50%;	
+	cursor: pointer;
+
+}
+
+.about p {
+	text-indent: 2rem;
+	margin-bottom: 5px;
+	text-align: justify;
+}
+
+.about {}
+
+.skills {
+}
+
+.portfolio-card {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0 30px;
+	margin: 0 auto;
+}
+
+.portfolio-card:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.card-title {
+	font-size: 1.05rem;
+	font-weight: 600;
+	width: 100%;
+}
+
+.card-image {
+}
+
+.card-image {
+	min-width: 300px;
+	height: 220px;
+	background-color: #eee;
+    background-repeat: no-repeat;
+  	background-position: top center;
+  	background-size: cover;
+  	transition: background-position 10s ease-out;
+ }
+
+.card-image.scroll:hover{
+   background-position: 0 100%;
+}
+
+.card-text {
+	width: 100%;
+	padding-left: 30px;
+}
+
+.card-text ul {
+	font-style: italic;
+	padding-left: 20px;
+}
+
+.skills-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.skills-list {
+	padding-left: 10px;
+}
+
+.skills-list ul {
+	list-style: none;
+}
+
+.skills-list li::before {
+	content: "•"; 
+	color: #ffca05;
+  	display: inline-block; 
+  	width: 1.3em;
+  	padding-left: 10px;
+}
+
+.footer__contact-buttons {
+	width: 50%;
+	margin-bottom: 40px;
+}
+
+
+
+/* utils */
+
+.button-up {
+	width: 50px;
+	height: 50px;
+	display: block;
+	position: fixed;
+	right: 40px;
+	bottom: 50px;
+	background-color: #ff0;	
+}
+
+.button-up i {
+	display: block;
+	position: relative;
+	margin-left: -5px;
+	filter: drop-shadow(0 0 5px white);
+}
+
+.hide {
+	display: none;
+}
+
+.head__content_button:hover::before{
+	content: 'тыць';
+	position: absolute;
+	background: #eee;
+	border-radius: .4em;
+	width: 50px;
+	height: 20px;
+	top: -30px;
+	right: -30px;
+	font-size: .8rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: center;
+	text-shadow: 1px 1px 2px white, 0 0 1em white;
+	font-weight: 600;
+	line-height: 1rem;
+	padding-top: 5px;
+	z-index: 3;
+	filter: drop-shadow(2px -1px 2px lightgrey);
+}
+
+.head__content_button:hover::after {
+	content: '';
+	position: absolute;
+	top: -15px;
+	right: -10px;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #eee;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+	z-index: 2;
+	filter: drop-shadow(1px 1px 2px lightgrey);
+
+}
+
+hr {
+	border: none;
+	border-bottom: 2px solid #fffe00;
+}
+
+.head__contact-button {
+}
+
+.github-icon {
+	background-position: -118px -218px;
+}
+
+.telegram-icon {
+	background-position: -168px -118px;
+
+}
+
+.ln-icon {
+	background-position: -67px -16px;
+}
+
+.email-icon {
+	background-position: -118px -118px;
+}
+
+.cv-icon {
+	background-position: -16px -16px;
+}
+
+#eventia {
+	background-image: url('../img/eventia.png');
+}
+
+#wp {
+	background-image: url('../img/wp.png');
+}
+
+#todo {
+ 	background-image: url('../img/todo.png');
+
+}
+#exp-mdb {
+	background-image: url('../img/exp-mdb.png');
+}
+
+.dev-img:before {
+	content: "developing...";
+	color: #666;
+	display: flex; 
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	justify-content:center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.head__menu li:before {
+	content: '';
+	display: block;
+	height: 3px;
+	background: #fffe00;
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	transition: .5s all;
+}
+
+.head__menu li:hover:before, .head__menu li:nth-child(1):before{
+	width: 100%;
+}
+
+.toast-body {
+	min-width: 300px;
+	min-height: 80px;
+	background: #333;
+	opacity: 0;
+	box-shadow: 0 0 4px #222;
+	position: fixed;
+	left: calc(50% - 150px);
+	bottom: -100px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	padding: 10px;
+	transition: .6s all ease;
+}
+
+.toast-message {
+	width: 100%;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.toast-body_show {
+	bottom: 60px;
+	opacity: .8;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 600px) {
+	.head__content {
+		flex-direction: column;
+		width: 100%;
+	}
+	.head__content > *, .head__menu ul {
+		width: 100%;
+	}
+	.head__contact-buttons {
+		justify-content: space-around;
+	}
+	.head__menu li:nth-child(1) {
+		display: none;
+	}
+	.head__image {
+		margin-bottom: 15px;
+	}
+	.wrapper * {
+		font-size: 1.15rem;
+	}
+	.wrapper h1 {
+		font-size: 2rem;
+	}
+	.wrapper h2 {
+		font-size: 1.8rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.skills-wrapper, .portfolio-card {
+		flex-direction: column !important;
+		width: 100%;
+	}
+	.skills-list, .card-image {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.wrapper {
+		width: 80%;
+	}
+}
