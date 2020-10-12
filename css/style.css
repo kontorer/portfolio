@@ -292,6 +292,10 @@ hr {
 	background-image: url('../img/exp-mdb.png');
 }
 
+#piechart {
+	background-image: url('../img/piechart.png');
+}
+
 .dev-img:before {
 	content: "developing...";
 	color: #666;
